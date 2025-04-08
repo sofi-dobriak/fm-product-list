@@ -1,2 +1,76 @@
 @import url(./reset.css);
 @import url(./modern-normalize.css);
+
+@font-face {
+  font-display: swap;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets//fonts//red-hat-text-v18-latin-regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./assets//fonts//red-hat-text-v18-latin-600.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Red Hat Text';
+  font-style: normal;
+  font-weight: 700;
+  src: url('./assets//fonts//red-hat-text-v18-latin-700.woff2') format('woff2');
+}
+
+:root {
+  --font-family: "Red Hat Text", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-bold: 600;
+  --font-weight-extra-bold: 700;
+  --font-size: 16px;
+  --line-height: 1.5;
+
+  --bg-color: #FCF8F5;
+  --card-bg-color: #FFFFFF;
+  --button-bg-color: #FFFDFF;
+  --button-border-color: #A29293;
+
+  --active-button-bg-color: #C83B0D;
+  --active-button-border-color: #C83B0D;
+
+  --cofirm-button-text-color: #FFF7E8;
+  --cofirm-button-bg: #C83B0E;
+  --hover-cofirm-button-bg: #942D0A;
+
+  --main-text-color: #211111;
+  --secondary-text-color: #9A8884;
+  --price-text-color: #945647;
+  --cart-icon-color: #945647;
+  --cart-title-color: #B93A11;
+  --cart-empty-text-color: #81726D;
+  --hover-cart-border-color: #B14626;
+
+  --close-icon-color: #A19191;
+  --hover-close-icon-color: #352D2B;
+
+  --confirm-icon-color: #279B74;
+}
+
+body {
+  background-color: var(--bg-color);
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--font-weight-regular);
+}
+
+button {
+  background-color: var(--button-bg-color);
+  border: 1px solid var(--button-border-color);
+  width: 100%;
+  max-width: 158px;
+  height: 42px;
+  border-radius: 30px;
+}

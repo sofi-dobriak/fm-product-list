@@ -1,0 +1,43 @@
+.cardWrapper {
+  background-color: var(--card-bg-color);
+
+  padding: 32px 22px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  max-width: 254px;
+}
+
+.cartTitle {
+  color: var(--cart-title-color);
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.cardEmptyImage {
+  margin: 0 auto 30px;
+}
+
+.cardEmptyDescription {
+  font-size: 14px;
+  text-align: center;
+  font-weight: var(--font-weight-bold);
+  color: var(--cart-empty-text-color);
+}
+
+@media (min-width: 768px) {
+  .cardWrapper {
+    max-width: unset;
+  }
+
+  .cartTitle {
+    text-align: center;
+  }
+}
+
+@media (min-width: 1440px) {
+
+  .cartTitle {
+    text-align: start;
+  }
+}
